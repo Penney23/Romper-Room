@@ -1,0 +1,250 @@
+/* Reset selector */
+*{
+	margin: 0; 
+	padding: 0; 
+}
+
+/* the styles for the body */
+body {
+	background-color: #fffded;
+	border: 3px solid #931420;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 98%;
+	max-width: 960px;
+	margin: 0px auto;
+	
+}
+
+/* Styles for header section*/
+header {
+	
+	padding: 1.5em 0em 2em 0em;
+	border-bottom: 1px solid #931420;
+	background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+header img {
+	float: left;
+	padding-right: 3.12%;
+	padding-left: 3.12% 30px;
+}
+header h2 {
+	font-size: 170%;
+	color: #800000;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header em.shadow{
+	text-shadow: 2.5px 2.5px 2.5px #800000;
+}
+
+/* The styles for the Nav section */
+
+#nav_menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#nav_menu ul li{
+	float: left;
+	width: 20%;
+}
+#nav_menu ul li a{
+	display: block;
+	/* width: 16.66% 160px; */
+	text-align: center;
+	padding: 1em 0;
+	background-color: #800000;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+#nav_menu .current{
+	color: yellow;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+	/* display: block; */
+	
+	
+}
+#nav_menu ul li:hover > ul{
+	display: block;
+}
+#nav_menu ul ::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/* the styles for the main section */
+main{
+	clear: left;
+	border-top: solid #931420;
+}
+main h2{
+	font-size: 130%;
+	color: #800000;
+	padding: .5em 0 .25em 0;
+}
+main h3{
+	font-size:  105%;
+	padding: auto auto .25em auto;
+}
+main img{
+	padding: .5em 0em 1em 0em;
+}
+main p{
+	padding: 0em 0em .5em 0em;
+}
+main blockquote{
+	padding-right: 2em;
+	padding-left: 2em;
+	font-style: italic;
+}
+main ul{
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+}
+main li{
+	padding-bottom: .35em;
+	list-style: circle;
+
+}
+main a:hover{
+	font-style: italic;
+}
+
+/* The styles for the Section */
+
+section{
+	width: 54.7%;
+	float: right;
+	/* padding: 0px 20px 20px 20px; */
+	padding: 0 2.5% 20px 2.5%;
+}
+section h1{
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+
+/* Styples for the article */
+article{
+	padding: .5em 0em .5em 0em;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article img{
+	float: right;
+	margin: 0em 0em 0em 0em;
+	border: 1px solid black;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	max-width: 40%;
+	min-width: 150px;
+}
+article h2{
+	padding: 0em 0em 0em 0em;
+}
+article h3{
+	font-size: 105%;
+	padding: 0em 0em .25em 0em;
+}
+
+/* The styles for the Aside */
+aside{
+	width: 22.4%;
+	float: right;
+	padding: 0px 0px 20px 20px;
+}
+aside, h3{
+	font-size: 105%;
+	padding: 0em 0em .25em 0em;
+	
+}
+aside img{
+	padding: 0em 0em 1em 0em;
+}
+
+/* the styles for the footer */
+footer{
+	background-color:  #931420;
+	clear: both;
+}
+footer p {
+	/* background: solid #931420; */
+	color: white;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	
+}
+#mobile_menu{
+	display: none;
+}
+
+
+@media only screen and (max-width: 959px) {
+	section h1 {
+		font-size: 135%;
+	}
+	section h2, aside h2{
+		font-size: 120%;
+	}
+	
+}
+
+@media only screen and (max-width: 767px) {
+	header img {
+		float: none;
+	}
+	header {
+		text-align: center;
+	}
+	section {
+		float: none;
+		width: 95%;
+		
+	}
+	aside{
+		float: none;
+		padding-right: 2.5%;
+		width: 95%;
+	}
+	article img{ max-width: 30%; }
+	#speaker {
+		/* You use moz so that it formats correctly for Firefox */
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	#nav_menu{
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #800000 !important;
+	}
+}
+	
+	@media only screen and (max-width: 479px){
+		body { font-size: 90% }
+	}
+	
+
+
